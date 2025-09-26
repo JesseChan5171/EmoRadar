@@ -1,0 +1,143 @@
+# 🎯 EmoRadar - Git Ignore Rules
+# Protect sensitive information and avoid committing unnecessary files
+
+# =============================================================================
+# SENSITIVE FILES - NEVER COMMIT THESE!
+# =============================================================================
+.env
+*.env
+secrets/
+credentials/
+
+# IBM Watsonx credentials
+watsonx_config.json
+ibm_credentials.json
+
+# =============================================================================
+# PYTHON SPECIFIC
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# =============================================================================
+# STREAMLIT SPECIFIC
+# =============================================================================
+# Streamlit cache
+.streamlit/
+
+# Streamlit secrets (if used)
+secrets.toml
+
+# =============================================================================
+# DATA AND MEDIA FILES
+# =============================================================================
+# Captured emotion session data (may contain personal info)
+emotion_sessions/
+session_data/
+*.json
+emotion_*.csv
+
+# Images and videos (may contain personal data)
+captured_images/
+student_photos/
+webcam_captures/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# =============================================================================
+# DEVELOPMENT FILES
+# =============================================================================
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing files
+test_images/
+debug_outputs/
+
+# =============================================================================
+# DEPLOYMENT
+# =============================================================================
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+
+# Cloud deployment
+.gcloudignore
+deployment/
+
+# =============================================================================
+# WHAT TO COMMIT
+# =============================================================================
+# ✅ Source code files (.py)
+# ✅ Requirements files (requirements.txt)  
+# ✅ Documentation (README.md)
+# ✅ Example/template files (.env.example)
+# ✅ Configuration templates
+# ✅ Sample/demo data (non-personal)
+
+# =============================================================================
+# HACKATHON SPECIFIC
+# =============================================================================
+# Team coordination files (if they contain sensitive info)
+team_notes.md
+private_todo.md
+strategy_notes.md
+
+# Personal customizations
+my_config.py
+personal_settings.json
